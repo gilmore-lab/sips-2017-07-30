@@ -1,0 +1,22 @@
+---
+title: "IRBs & Data Sharing"
+author: "Rick Gilmore & Gustav Nilsonne"
+date: "`r Sys.time()`"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## IRBs & Data Sharing
+
+<!-- http://improvingpsych.org/img/logo.png -->
+
+- SIPS 2017
+- 2017-07-30 3:30-6:00 pm
+
+## Aims
+
+## Resources
+
