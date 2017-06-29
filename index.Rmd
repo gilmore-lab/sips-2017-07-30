@@ -217,16 +217,18 @@ This is an extra step, but it protects participants, researchers, and institutio
 - Taxpayers?
 - Participants?
 
-## Other pitfalls to avoid
+## Other pitfalls
 
 - ~~Specific uses~~
 - ~~Data destruction clauses~~
+- Alert participants that data may be stored in "cloud" servers (e.g., SurveyMonkey, Qualtrics, Databrary, OpenNeuro, OSF, etc.)?
 
 ## Why bother?
 
 - Reproducible and robust results
 - Data reuse (leverages public investments)
-- Data linkaage, aggregation
+- Data linkaage, aggregation, metaanalysis
+    - Metadata matters!
 
 ---
 
