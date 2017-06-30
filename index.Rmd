@@ -19,6 +19,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Vision
 
 - Make data from psychological research as widely available as possible
+- Test edit
 
 ## Challenges in sharing data
 
