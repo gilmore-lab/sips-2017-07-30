@@ -19,11 +19,19 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Vision
 
 - Make data from psychological research as widely available as possible
-- Test edit
+    - Increase reuse potential
+    - Reduce bias risk
+    - Make published analyses transparent
 
-## Challenges in sharing data
+## Ethical challenges in sharing data
 
-- Data sharing may pose harm of loss of privacy & confidentiality
+- Belmont principles
+    - Beneficence
+        - Data sharing increases value (good)
+        - Data sharing may pose risk of loss of privacy & confidentiality (bad)
+    - Autonomy
+        - Data sharing may pose risk of unintended use of data
+    - (Justice)
 
 ## Loss of privacy
 
@@ -36,8 +44,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Meeting the challenges
 
 - What data are you collecting?
-- What risks does it pose?
-- How should it be protected?
+- What risks do data pose?
+- How should data be protected?
+- What information is given to participant and what are they asked to consent to?
 - Tension between protecting participants and advancing scientific discovery
 
 ## Meeting the challenges
@@ -81,11 +90,30 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 - Photographic image - Photographic images are not limited to images of the face.
 - Any other characteristic that could uniquely identify the individual
 
-## Challenges with de-identifying data
+## Examples of possibly sensitive data
 
-- Dates (birth, test dates, exact age) extremely useful
-- Geographic information extremely useful
-- Video, audio recordings extremely useful
+- Health related information
+    - Medical history
+    - Medical risk factors including genetic data
+- Information about other potentially stigmatizing characteristics (situation-dependent)
+    - Religious/philosophical convictions
+    - Sexual identity and preferences
+    - Political affiliation, trade union membership
+    - Ethnicity, nationality, citizenship status
+
+## Weighing benefit vs risk
+
+- How useful are data?
+- How sensitive are data?
+- How likely is it that reidentification could be acieved, and by whom?
+
+## Risk scenarios
+
+- Reidentification by participants themselves
+    - Can be harmful e.g. if dataset contains uncommunicated health risk information
+- Reidentification by insider
+- Reidentification by targeted search (nemesis scenario)
+- Reidentification by mass matching (dystopian AI scenario)
 
 ## Challenges with de-identifying data
 
@@ -93,6 +121,27 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
     - de Montjoye, Y.-A., Radaelli, L., Singh, V. K., & Pentland, A. S. (2015). Identity and privacy. Unique in the shopping mall: on the reidentifiability of credit card metadata. Science, 347(6221), 536–539. Retrieved from http://dx.doi.org/10.1126/science.1256297
     - Gymrek, M., McGuire, A. L., Golan, D., Halperin, E., & Erlich, Y. (2013). Identifying personal genomes by surname inference. Science, 339(6117), 321-324.
     - Latanya Sweeney's Data Privacy Lab: https://dataprivacylab.org/people/sweeney/
+
+## Ways to mitigate risk
+
+- Aggregate or censor sensitive variables
+- Aggregate or censor secondary identifying variables
+- Stepped access
+
+## Information to participants
+
+- Do:
+    - Describe how you will share data in as much detail as possible (autonomy)
+    - Give motivation for recording of sensitive variables
+- Avoid:
+    - Making promises you cannot keep, e.g. "noone except the researchers in the project will ever see the data"
+    - Making unneccessary restrictions, e.g. "your data will be stored for ten years"
+    
+## Example language for consent forms
+
+https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html
+https://open-brain-consent.readthedocs.io/en/latest/#
+
 
 ## Sharing de-identified data
 
