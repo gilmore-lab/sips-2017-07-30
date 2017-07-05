@@ -2,7 +2,16 @@
 title: "IRBs & Data Sharing"
 author: "Rick Gilmore & Gustav Nilsonne"
 date: "`r Sys.time()`"
-output: ioslides_presentation
+css: gilmore-nilsonne-sips-2017.css
+output: 
+  ioslides_presentation:
+    incremental: false
+    widescreen: true
+    smaller: false
+    logo: img/sips-logo-sm.png
+  github_document:
+    toc: true
+    toc_levels: 2
 ---
 
 ```{r setup, include=FALSE}
@@ -11,10 +20,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## IRBs & Data Sharing
 
+<div class="centered">
 <img src="http://improvingpsych.org/img/logo.png" width=800px/>
 
-- SIPS 2017
-- 2017-07-30 3:30-4:45 pm
+**2017-07-30 3:30-4:45 pm**
+</div>
 
 ## Vision
 
@@ -22,24 +32,32 @@ knitr::opts_chunk$set(echo = FALSE)
     - Increase reuse potential
     - Reduce bias risk
     - Make published analyses transparent
+- Avoid causing harm to research participants
 
-## Ethical challenges in sharing data
+## Roadmap
 
-- Belmont principles
-    - Beneficence
-        - Data sharing increases value (good)
-        - Data sharing may pose risk of loss of privacy & confidentiality (bad)
-    - Autonomy
-        - Data sharing may pose risk of unintended use of data
-    - (Justice)
+- Ethical challenges in sharing data
+- Sharing de-identified data
+- Sharing identifiable data
 
-## Loss of privacy
+# Ethical challenges in sharing data
 
->"Hey, Joe told me that you participated in his study of people who eat scorpions for breakfast."
+## Belmont principles
 
-## Loss of confidentiality
+- Beneficence
+    - Data sharing increases value (good)
+    - Data sharing may pose risk of loss of privacy & confidentiality (bad)
+- Autonomy
+    - Data sharing may pose risk of unintended use of data
+- (Justice)
 
->"I saw the video on YouTube of you feeding scorpions to your roommate from that study. Whoa, pretty intense. It's gone viral. Did you know they were going to post it publicly?"
+<!-- ## Loss of privacy -->
+
+<!-- >"Hey, Joe told me that you participated in his study of people who eat scorpions for breakfast." -->
+
+<!-- ## Loss of confidentiality -->
+
+<!-- >"I saw the video on YouTube of you feeding scorpions to your roommate from that study. Whoa, pretty intense. It's gone viral. Did you know they were going to post it publicly?" -->
 
 ## Meeting the challenges
 
@@ -54,11 +72,12 @@ knitr::opts_chunk$set(echo = FALSE)
 - Sharing de-identified data
 - Sharing identifiable data
 
-## Sharing de-identified data
+# Sharing de-identified data
 
-- What is personally identifying information (PII)?
-    - PII definitions vary by use case
-    - Health Insurance Portability and Accountability Act (HIPAA) identifiers
+## What is personally identifying information (PII)?
+
+- PII definitions vary by use case
+- Health Insurance Portability and Accountability Act (HIPAA) identifiers
 
 <div class="notes">
 In the U.S., much behavioral research is funded by the NIH and has at least a nominal relationship to health. So, the HIPAA identifiers serve as a guideline for PII.
@@ -69,6 +88,9 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 - Name
 - Address (all geographic subdivisions smaller than state, including street address, city county, and zip code)
 - All elements (except years) of dates related to an individual (including birthdate, admission date, discharge date, date of death, and exact age if over 89)
+
+---
+
 - Telephone
 - Fax numbers
 - Email address
@@ -95,17 +117,20 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 - Health related information
     - Medical history
     - Medical risk factors including genetic data
+    
+---
+
 - Information about other potentially stigmatizing characteristics (situation-dependent)
     - Religious/philosophical convictions
     - Sexual identity and preferences
     - Political affiliation, trade union membership
     - Ethnicity, nationality, citizenship status
 
-## Weighing benefit vs risk
+## Weighing benefits (of sharing) vs. risks
 
 - How useful are data?
 - How sensitive are data?
-- How likely is it that reidentification could be acieved, and by whom?
+- How likely is it that reidentification could be achieved, and by whom?
 
 ## Risk scenarios
 
@@ -118,9 +143,40 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 ## Challenges with de-identifying data
 
 - Risk of reidentification may be high anyway
-    - de Montjoye, Y.-A., Radaelli, L., Singh, V. K., & Pentland, A. S. (2015). Identity and privacy. Unique in the shopping mall: on the reidentifiability of credit card metadata. Science, 347(6221), 536–539. Retrieved from http://dx.doi.org/10.1126/science.1256297
-    - Gymrek, M., McGuire, A. L., Golan, D., Halperin, E., & Erlich, Y. (2013). Identifying personal genomes by surname inference. Science, 339(6117), 321-324.
-    - Latanya Sweeney's Data Privacy Lab: https://dataprivacylab.org/people/sweeney/
+
+---
+
+<div class="centered">
+<a href="http://dx.doi.org/10.1126/science.1256297">
+<img src="img/montjoye-etal-science.jpg" hwidth=800px>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://dx.doi.org/10.1126/science.1229566">
+<img src="img/gymrek-etal-science.jpg" width=800px>
+</a>
+</div>
+    
+---
+
+<div class="centered">
+<a href="https://dataprivacylab.org/projects/identifiability/paper1.pdf">
+<img src="img/sweeney-2000.jpg" width=800px>
+</a>
+
+Name + DOB + ZIP
+</div>
+
+<!-- --- -->
+
+<!-- <div class="centered"> -->
+<!-- <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1450006"> -->
+<!-- <img src="img/ohm-2009.jpg" height=550px> -->
+<!-- </a> -->
+<!-- </div> -->
 
 ## Ways to mitigate risk
 
@@ -130,22 +186,23 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 
 ## Information to participants
 
-- Do:
+- **Do**:
     - Describe how you will share data in as much detail as possible (autonomy)
     - Give motivation for recording of sensitive variables
-- Avoid:
-    - Making promises you cannot keep, e.g. "noone except the researchers in the project will ever see the data"
+    
+---
+
+- **Avoid**:
+    - Making promises you cannot keep, e.g. "no one except the researchers in the project will ever see the data"
     - Making unneccessary restrictions, e.g. "your data will be stored for ten years"
     
-## Example language for consent forms
+## Example language for consent forms {.smaller}
 
-https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html
-https://open-brain-consent.readthedocs.io/en/latest/#
+<https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html>
 
+<https://open-brain-consent.readthedocs.io/en/latest/#>
 
-## Sharing de-identified data
-
-## [OpenNeuro.org](http://openneuro.org)
+## Case study: [OpenNeuro.org](http://openneuro.org)
 
 <div class="centered">
 <a href="http://openneuro.org">
@@ -171,10 +228,12 @@ https://open-brain-consent.readthedocs.io/en/latest/#
 </a>
 </div>
 
-## Sharing identifiable data
+# Sharing *identifiable* data
 
+## Case studies in sharing identifiable data
+
+- [Databrary.org](http//databrary.org)
 - Open Humans
-- Databrary.org
 
 ## [Databrary.org](http://databrary.org)
 
@@ -206,10 +265,12 @@ https://open-brain-consent.readthedocs.io/en/latest/#
 </a>
 </div>
 
-## Share with whom?
+## Share with whom & for what purposes
 
 - By request, case-by-case
+    - Investigator controls
 - Restricted sharing
+    - Community of authorized individuals
 - Public
 
 ---
@@ -260,32 +321,6 @@ This is an extra step, but it protects participants, researchers, and institutio
 
 [Open Humans: Public Data Sharing Consent](https://www.openhumans.org/static/public-data/docs/Consent_Document_20160128_(stamped).005ab78912c1.pdf)
 
-## Who owns data?
-
-- Investigators?
-- Institutions?
-- Taxpayers?
-- Participants?
-
-## Other pitfalls
-
-- ~~Specific uses~~
-- ~~Data destruction clauses~~
-- Alert participants that data may be stored in "cloud" servers (e.g., SurveyMonkey, Qualtrics, Databrary, OpenNeuro, OSF, etc.)?
-
-## Why bother?
-
-- Reproducible and robust results
-- Data reuse (leverages public investments)
-- Data linkaage, aggregation, metaanalysis
-    - Metadata matters!
-
----
-
-<div class="centered">
-<img src="img/bricks-mortar.png" height=550px>
-</div>
-
 ## Society benefits
 
 - Public data is a public resource 
@@ -295,14 +330,84 @@ standard research groups
 
 [Open Humans: Public Data Sharing Consent](https://www.openhumans.org/static/public-data/docs/Consent_Document_20160128_(stamped).005ab78912c1.pdf)
 
-## Best practices
+<!-- ## Who owns data? -->
 
-- Preparing for sharing
-    - Get IRB approval
+<!-- - Investigators? -->
+<!-- - Institutions? -->
+<!-- - Taxpayers? -->
+<!-- - Participants? -->
+
+# Recommendations
+
+## Best practices to adopt
+
+- Prepare for sharing
+    - Get IRB/ethics board approval
     - Get participant approval
-- Eliminate "don't have permission" as a barrier to sharing
 
-## Resources
+---
 
-- Schönbrodt, F., Gollwitzer, M. & Abele-Brehm A. (2016). Data Management in Psychological Science: Specification of the DFG Guidelines. <http://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf>
-- **C**onnected and **O**pen **R**esearch **E**thics (CORE). <https://thecore.ucsd.edu/>.
+- Alert participants 
+    - **Where** data will be stored 
+        - e.g. in "cloud" servers (e.g., SurveyMonkey, Qualtrics, Databrary, OpenNeuro, OSF, etc.)
+    - And for **how long**
+        - indefinitely
+- Share as openly as practicable
+
+## Pitfalls to avoid
+
+- ~~Specific use cases for data~~
+    - "Your data will be used to study the relationship between X and Y."
+- ~~Data destruction clauses~~
+    - "Your data will be stored for X years then destroyed."
+    
+<!-- ## Why bother? -->
+
+<!-- - Reproducible and robust results -->
+<!-- - Data reuse (leverages public investments) -->
+<!-- - Data linkaage, aggregation, metaanalysis -->
+<!--     - Metadata matters! -->
+
+<!-- --- -->
+
+<!-- <div class="centered"> -->
+<!-- <img src="img/bricks-mortar.png" height=550px> -->
+<!-- </div> -->
+
+# Discussion
+
+# References
+
+<!-- Scrolling final reference page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):before {
+  background: none;
+  }
+slides > slide:not(.nobackground):after {
+  content: '';
+  background: none;
+  }
+}
+</style>
+
+## Additional resources {.smaller}
+
+de Montjoye, Y.-A., Radaelli, L., Singh, V. K., & Pentland, A. S. (2015). Identity and privacy. Unique in the shopping mall: on the reidentifiability of credit card metadata. Science, 347(6221), 536–539. Retrieved from http://dx.doi.org/10.1126/science.1256297
+
+Schönbrodt, F., Gollwitzer, M. & Abele-Brehm A. (2016). Data Management in Psychological Science: Specification of the DFG Guidelines. <http://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf>
+
+**C**onnected and **O**pen **R**esearch **E**thics (CORE). <https://thecore.ucsd.edu/>
+
+Latanya Sweeney's Data Privacy Lab: <https://dataprivacylab.org/people/sweeney/>
+
+## Stack
+
+This talk was produced on `r Sys.Date()` in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the reveal.JS framework. 
+The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/sips-2017-07-30/>. 
+Information about the R Session that produced the code is as follows:
+
+```{r session-info}
+sessionInfo()
+```
