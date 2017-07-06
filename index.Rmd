@@ -274,6 +274,25 @@ Your browser does not support the video tag.
 Every researcher who wants access to Databrary must have formal written approval from their institution.
 </div>
 
+## Lessons learned
+
+- Research consent ≠ permission to share
+- "Cloud" storage vs. institutionally housed
+- Comfort with data sharing varies among IRBs
+- Laws differ among countries
+
+<div class="notes">
+In securing agreements with more than 330 institutions, we've learned some valuable lessons.
+One is to try to keep separate the consent to participate in research from the permission to share data.
+The risks and benefits differ.
+Participants more informed about what they're sharing *after* a session has ended.
+A second is that some institutions distinguish between data stored in the cloud like OSF or Databrary from data stored on servers the institution controls.
+A third is that IRBs, like the local communities they are intended to reflect, differ.
+Some aren't comfortable with Databrary's distributed model of responsibility and won't let their researchers participate.
+And finally, national laws differ.
+Some researchers can't store identifiable data on U.S. servers.
+</div>
+
 ## Open Humans
 
 <div class="centered">
@@ -281,7 +300,6 @@ Every researcher who wants access to Databrary must have formal written approval
 <img src="img/openhumans.org.jpg" height=480px>
 </a>
 </div>
-
 
 ## Public sharing of identifiable data
 
