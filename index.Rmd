@@ -24,6 +24,8 @@ knitr::opts_chunk$set(echo = FALSE)
 <img src="http://improvingpsych.org/img/logo.png" width=800px/>
 
 **2017-07-30 3:30-4:45 pm**
+
+See <http://osf.io/9d5hr/>
 </div>
 
 ## Vision
@@ -42,35 +44,29 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Ethical challenges in sharing data
 
-## Belmont principles
+## [Belmont principles](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html)
 
 - Beneficence
     - Data sharing increases value (good)
     - Data sharing may pose risk of loss of privacy & confidentiality (bad)
 - Autonomy
     - Data sharing may pose risk of unintended use of data
-- (Justice)
-
-<!-- ## Loss of privacy -->
-
-<!-- >"Hey, Joe told me that you participated in his study of people who eat scorpions for breakfast." -->
-
-<!-- ## Loss of confidentiality -->
-
-<!-- >"I saw the video on YouTube of you feeding scorpions to your roommate from that study. Whoa, pretty intense. It's gone viral. Did you know they were going to post it publicly?" -->
+- Justice
+    - Benefits (and costs) of research participation should be equitable
 
 ## Meeting the challenges
 
+- Tension between protecting participants & advancing discovery
 - What data are you collecting?
-- What risks do data pose?
+- What risks does data sharing pose?
 - How should data be protected?
-- What information is given to participant and what are they asked to consent to?
-- Tension between protecting participants and advancing scientific discovery
+- What information is given to participants and what are they asked to consent to?
 
-## Meeting the challenges
+## Who can (& should) have access?
 
-- Sharing de-identified data
-- Sharing identifiable data
+- Public
+- Community of authorized individuals (researchers)
+- Individuals selected by data owner, repository
 
 # Sharing de-identified data
 
@@ -101,7 +97,7 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 - Medical record number
 - Health plan beneficiary number
 - Account number
-- Certificate or licence number
+- Certificate or license number
 - Any vehicle or other device serial number
 - Web URL
 - Internet Protocol (IP) Address
@@ -233,7 +229,7 @@ Name + DOB + ZIP
 ## Case studies in sharing identifiable data
 
 - [Databrary.org](http//databrary.org)
-- Open Humans
+- [Open Humans](https://www.openhumans.org/) 
 
 ## [Databrary.org](http://databrary.org)
 
@@ -244,7 +240,7 @@ Name + DOB + ZIP
 ## [Databrary.org](http://databrary.org)
 
 - Specializes in storing, sharing video
-- Video captures behavior unlike other methods, but is *identifiable*
+- Video captures behavior more fully than other methods, but is *identifiable*
 - Policy framework for sharing identifiable data
     + **Permission to share** -> builds on informed consent
     + **Restricted access** for (institutionally) authorized researchers
@@ -257,21 +253,14 @@ Name + DOB + ZIP
 </a>
 </div>
 
-## Open Humans
+## Seeking [permission to share](https://www.databrary.org/access/guide/investigators/release.html)
 
 <div class="centered">
-<a href="http://www.openhumans.org">
-<img src="img/openhumans.org.jpg" height=480px>
-</a>
+<video controls>
+  <source src="mov/example-video-1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 </div>
-
-## Share with whom & for what purposes
-
-- By request, case-by-case
-    - Investigator controls
-- Restricted sharing
-    - Community of authorized individuals
-- Public
 
 ---
 
@@ -285,15 +274,14 @@ Name + DOB + ZIP
 Every researcher who wants access to Databrary must have formal written approval from their institution.
 </div>
 
----
+## Open Humans
 
 <div class="centered">
-<img src="img/databrary-auth-inst-map.jpg" height=550px>
+<a href="http://www.openhumans.org">
+<img src="img/openhumans.org.jpg" height=480px>
+</a>
 </div>
 
-<div class="notes">
-This is an extra step, but it protects participants, researchers, and institutions. The number and geographic diversity of the institutions that have signed on in just over 3 years tell us that it is not overly burdensome.
-</div>
 
 ## Public sharing of identifiable data
 
@@ -321,21 +309,14 @@ This is an extra step, but it protects participants, researchers, and institutio
 
 [Open Humans: Public Data Sharing Consent](https://www.openhumans.org/static/public-data/docs/Consent_Document_20160128_(stamped).005ab78912c1.pdf)
 
-## Society benefits
+## Benefits of public sharing
 
-- Public data is a public resource 
+- Public data as a public resource 
 - Serves diverse individuals not part of
 standard research groups
 - Participants can advance their own understanding
 
 [Open Humans: Public Data Sharing Consent](https://www.openhumans.org/static/public-data/docs/Consent_Document_20160128_(stamped).005ab78912c1.pdf)
-
-<!-- ## Who owns data? -->
-
-<!-- - Investigators? -->
-<!-- - Institutions? -->
-<!-- - Taxpayers? -->
-<!-- - Participants? -->
 
 # Recommendations
 
@@ -350,6 +331,7 @@ standard research groups
 - Alert participants 
     - **Where** data will be stored 
         - e.g. in "cloud" servers (e.g., SurveyMonkey, Qualtrics, Databrary, OpenNeuro, OSF, etc.)
+        - Be explicit, but not specific
     - And for **how long**
         - indefinitely
 - Share as openly as practicable
@@ -361,19 +343,6 @@ standard research groups
 - ~~Data destruction clauses~~
     - "Your data will be stored for X years then destroyed."
     
-<!-- ## Why bother? -->
-
-<!-- - Reproducible and robust results -->
-<!-- - Data reuse (leverages public investments) -->
-<!-- - Data linkaage, aggregation, metaanalysis -->
-<!--     - Metadata matters! -->
-
-<!-- --- -->
-
-<!-- <div class="centered"> -->
-<!-- <img src="img/bricks-mortar.png" height=550px> -->
-<!-- </div> -->
-
 # Discussion
 
 # References
@@ -392,19 +361,9 @@ slides > slide:not(.nobackground):after {
 }
 </style>
 
-## Additional resources {.smaller}
-
-de Montjoye, Y.-A., Radaelli, L., Singh, V. K., & Pentland, A. S. (2015). Identity and privacy. Unique in the shopping mall: on the reidentifiability of credit card metadata. Science, 347(6221), 536–539. Retrieved from http://dx.doi.org/10.1126/science.1256297
-
-Schönbrodt, F., Gollwitzer, M. & Abele-Brehm A. (2016). Data Management in Psychological Science: Specification of the DFG Guidelines. <http://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf>
-
-**C**onnected and **O**pen **R**esearch **E**thics (CORE). <https://thecore.ucsd.edu/>
-
-Latanya Sweeney's Data Privacy Lab: <https://dataprivacylab.org/people/sweeney/>
-
 ## Stack
 
-This talk was produced on `r Sys.Date()` in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the reveal.JS framework. 
+This talk was produced on `r Sys.Date()` in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the ioslides framework. 
 The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/sips-2017-07-30/>. 
 Information about the R Session that produced the code is as follows:
 
