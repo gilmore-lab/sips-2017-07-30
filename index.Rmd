@@ -46,12 +46,15 @@ See <http://osf.io/9d5hr/>
 
 ## [Belmont principles](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html)
 
-- Beneficence
+- **Beneficence**
     - Data sharing increases value (good)
     - Data sharing may pose risk of loss of privacy & confidentiality (bad)
-- Autonomy
+- **Autonomy**
     - Data sharing may pose risk of unintended use of data
-- Justice
+
+---
+
+- **Justice**
     - Benefits (and costs) of research participation should be equitable
 
 ## Meeting the challenges
