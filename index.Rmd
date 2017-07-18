@@ -195,11 +195,10 @@ Name + DOB + ZIP
     - Making promises you cannot keep, e.g. "no one except the researchers in the project will ever see the data"
     - Making unneccessary restrictions, e.g. "your data will be stored for ten years"
     
-## Example language for consent forms {.smaller}
+## Example language for consent forms
 
-<https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html>
-
-<https://open-brain-consent.readthedocs.io/en/latest/#>
+- <https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html>
+- <https://open-brain-consent.readthedocs.io/en/latest/#>
 
 ## Case study: [OpenNeuro.org](http://openneuro.org)
 
@@ -228,6 +227,23 @@ Name + DOB + ZIP
 </div>
 
 # Sharing *identifiable* data
+
+## [Canadian Policy](http://www.pre.ethics.gc.ca/eng/policy-politique/initiatives/tcps2-eptc2/chapter5-chapitre5/#toc05-1e)
+
+- Ethics board review **not required** for research that relies exclusively on secondary use of *anonymous* information
+- Researchers must obtain consent for secondary use of *identifiable* data **unless**
+
+- identifiable information is essential to the research;
+- use of identifiable information without consent is unlikely to adversely affect participants
+- researchers take appropriate measures to protect privacy of individuals and safeguard identifiable information
+    
+--- 
+
+- researchers comply with any known preferences previously expressed by individuals about any use of their information
+- it is impossible or impracticable to seek consent
+- researchers have obtained any other necessary permission for secondary use of information for research purposes.
+
+<http://www.pre.ethics.gc.ca/eng/policy-politique/initiatives/tcps2-eptc2/chapter5-chapitre5/>
 
 ## Case studies in sharing identifiable data
 
@@ -344,8 +360,8 @@ standard research groups
 ## Best practices to adopt
 
 - Prepare for sharing
-    - Get IRB/ethics board approval
-    - Get participant approval
+    - Get IRB/ethics board approval 
+    - Get participant approval (even if planning to anonymize)
 
 ---
 
