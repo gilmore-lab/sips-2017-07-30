@@ -59,17 +59,33 @@ See <http://osf.io/9d5hr/>
 
 ## Meeting the challenges
 
-- Tension between protecting participants & advancing discovery
-- What data are you collecting?
+- Tension b/w protecting participants & advancing discovery
+- Tension b/w requirements/expectations/desires to share and practical, regulatory/legal, ethical constraints
+
+## What data are you collecting?
+
+- Personally identifying or sensitive data?
 - What risks does data sharing pose?
 - How should data be protected?
-- What information is given to participants and what are they asked to consent to?
 
-## Who can (& should) have access?
+## Where will you share data?
+
+- Researcher/lab/university server
+- Supplemental material linked to journal article
+- Data repository
+
+## Who will (& should) have access?
 
 - Public
 - Community of authorized individuals (researchers)
-- Individuals selected by data owner, repository
+- Individuals selected by data owner or repository
+
+## What have participants been told, approved?
+
+- What data collected, shared
+- Who will have access
+- Where stored, how accessed
+- Purposes of use, types of questions
 
 # Sharing de-identified data
 
@@ -139,9 +155,7 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 - Reidentification by targeted search (nemesis scenario)
 - Reidentification by mass matching (dystopian AI scenario)
 
-## Challenges with de-identifying data
-
-- Risk of reidentification may be high anyway
+## How anonymous is 'anonymous' data?
 
 ---
 
@@ -166,7 +180,7 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 <img src="img/sweeney-2000.jpg" width=800px>
 </a>
 
-Name + DOB + ZIP
+Name + DOB + ZIP uniquely identifies most Americans
 </div>
 
 <!-- --- -->
@@ -181,24 +195,26 @@ Name + DOB + ZIP
 
 - Aggregate or censor sensitive variables
 - Aggregate or censor secondary identifying variables
-- Stepped access
+- Stepped or restricted access
+- See also de Wolf et al. ([2005](http://www.jstor.org/stable/3563537), [2006](https://www.ncbi.nlm.nih.gov/pubmed/16770883))
 
 ## Information to participants
 
 - **Do**:
     - Describe how you will share data in as much detail as possible (autonomy)
-    - Give motivation for recording of sensitive variables
+    - Give motivation for recording of sensitive variables (beneficence)
     
 ---
 
 - **Avoid**:
-    - Making promises you cannot keep, e.g. "no one except the researchers in the project will ever see the data"
-    - Making unneccessary restrictions, e.g. "your data will be stored for ten years"
+    - Making promises you cannot keep, e.g. *"no one except the researchers in the project will ever see the data"*
+    - Making unneccessary restrictions, e.g. *"your data will be stored for ten years then be destroyed"*
     
 ## Example language for consent forms
 
-- <https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html>
-- <https://open-brain-consent.readthedocs.io/en/latest/#>
+- [ICPSR](https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html)
+- [Open Brain consent](https://open-brain-consent.readthedocs.io/en/latest/#)
+- [Draft language from Penn State IRB](https://osf.io/9d5hr/wiki/home/)
 
 ## Case study: [OpenNeuro.org](http://openneuro.org)
 
@@ -231,17 +247,21 @@ Name + DOB + ZIP
 ## [Canadian Policy](http://www.pre.ethics.gc.ca/eng/policy-politique/initiatives/tcps2-eptc2/chapter5-chapitre5/#toc05-1e)
 
 - Ethics board review **not required** for research that relies exclusively on secondary use of *anonymous* information
+- [*"**Secondary data** refers to data that was collected by someone other than the user. Common sources of secondary data for social science include censuses, information collected by government departments, organisational records and data that was originally collected for other research purposes."*](https://en.wikipedia.org/wiki/Secondary_data)
+
+---
+
 - Researchers must obtain consent for secondary use of *identifiable* data **unless**
-
-- identifiable information is essential to the research;
-- use of identifiable information without consent is unlikely to adversely affect participants
-- researchers take appropriate measures to protect privacy of individuals and safeguard identifiable information
+    - identifiable information is essential to the research;
+    - use of identifiable information without consent is unlikely to adversely affect participants
+    - researchers take appropriate measures to protect privacy of individuals and safeguard identifiable information
     
---- 
+---
 
-- researchers comply with any known preferences previously expressed by individuals about any use of their information
-- it is impossible or impracticable to seek consent
-- researchers have obtained any other necessary permission for secondary use of information for research purposes.
+- Researchers must obtain consent for secondary use of *identifiable* data **unless**
+    - researchers comply with any known preferences previously expressed by individuals about any use of their information
+    - it is impossible or impracticable to seek consent
+    - researchers have obtained any other necessary permission for secondary use of information for research purposes.
 
 <http://www.pre.ethics.gc.ca/eng/policy-politique/initiatives/tcps2-eptc2/chapter5-chapitre5/>
 
@@ -359,50 +379,80 @@ standard research groups
 
 ## Best practices to adopt
 
-- Prepare for sharing
+- **Prepare for sharing**
     - Get IRB/ethics board approval 
     - Get participant approval (even if planning to anonymize)
 
 ---
 
-- Alert participants 
+- **Alert participants**
     - **Where** data will be stored 
         - e.g. in "cloud" servers (e.g., SurveyMonkey, Qualtrics, Databrary, OpenNeuro, OSF, etc.)
         - Be explicit, but not specific
+    - **Who** will have access
     - And for **how long**
         - indefinitely
-- Share as openly as practicable
+        - stopping sharing possible, unsharing not-so
+    
+---
+
+- **Share as openly as practicable**
+    - With approved, authorized data repositories
 
 ## Pitfalls to avoid
 
 - ~~Specific use cases for data~~
-    - "Your data will be used to study the relationship between X and Y."
+    - *"Your data will be used to study the relationship between X and Y."*
 - ~~Data destruction clauses~~
-    - "Your data will be stored for X years then destroyed."
+    - *"Your data will be stored for X years then destroyed."*
+    - **NOT REQUIRED by U.S. or Canadian law**
     
 # Discussion
 
-# References
+## Issues
+
+- Sponsor requirements (or constraints) vs. open sharing
+- Do IRBs overstep regulatory boundaries when considering risks and benefits outside an approved study [(Burnam, 2014)](http://osc.centerforopenscience.org/2014/02/05/open-data-and-IRBs)?
+- Policies for restricting access but promoting openness
+- Who owns data
+
+# Resources
 
 <!-- Scrolling final reference page -->
 <!-- http://stackoverflow.com/q/38260799 -->
-<style>
-slides > slide { overflow: scroll; }
-slides > slide:not(.nobackground):before {
-  background: none;
-  }
-slides > slide:not(.nobackground):after {
-  content: '';
-  background: none;
-  }
-}
-</style>
+<!-- <style> -->
+<!-- slides > slide { overflow: scroll; } -->
+<!-- slides > slide:not(.nobackground):before { -->
+<!--   background: none; -->
+<!--   } -->
+<!-- slides > slide:not(.nobackground):after { -->
+<!--   content: ''; -->
+<!--   background: none; -->
+<!--   } -->
+<!-- } -->
+<!-- </style> -->
 
 ## Stack
 
-This talk was produced on `r Sys.Date()` in [RStudio 1.0.143](http://rstudio.com) using R Markdown and the ioslides framework. 
+This talk was produced on `r Sys.Date()` in [RStudio 1.0.143](http://rstudio.com) using R Markdown. 
 The code and materials used to generate the slides may be found at <https://github.com/gilmore-lab/sips-2017-07-30/>. 
+An OSF wiki is [here](https://osf.io/9d5hr/wiki/home/).
 Information about the R Session that produced the code is as follows:
+
+---
+<!-- Scrolling final reference page -->
+<!-- http://stackoverflow.com/q/38260799 -->
+<!-- <style> -->
+<!-- slides > slide { overflow: scroll; } -->
+<!-- slides > slide:not(.nobackground):before { -->
+<!--   background: none; -->
+<!--   } -->
+<!-- slides > slide:not(.nobackground):after { -->
+<!--   content: ''; -->
+<!--   background: none; -->
+<!--   } -->
+<!-- } -->
+<!-- </style> -->
 
 ```{r session-info}
 sessionInfo()
