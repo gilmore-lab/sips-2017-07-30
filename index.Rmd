@@ -442,6 +442,7 @@ standard research groups
 - Sponsor requirements (or constraints) vs. open sharing
 - Do IRBs overstep regulatory boundaries when considering risks and benefits outside an approved study [(Burnam, 2014)](http://osc.centerforopenscience.org/2014/02/05/open-data-and-IRBs)?
 - Policies for restricting access but promoting openness
+- "Big Data’s End Run around Anonymity and Consent" [Barocas & Nissenbaum 2014](http://dx.doi.org/10.1017/CBO9781107590205.004)
 - Who owns data?
 
 # Resources
