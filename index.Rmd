@@ -28,13 +28,20 @@ knitr::opts_chunk$set(echo = FALSE)
 See <http://osf.io/9d5hr/>
 </div>
 
+## Acknowledgements
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=250px>
+<img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=250px>
+</br>
+<img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height-250px>
+
 ## Vision
 
 - Make data from psychological research as widely available as possible
     - Increase reuse potential
-    - Reduce bias risk
-    - Make published analyses transparent
-- Avoid causing harm to research participants
+    - Reduce bias
+    - Make published analyses as transparent as possible
+- Avoid harming research participants
 
 ## Roadmap
 
@@ -51,6 +58,7 @@ See <http://osf.io/9d5hr/>
     - Data sharing may pose risk of loss of privacy & confidentiality (bad)
 - **Autonomy**
     - Data sharing may pose risk of unintended use of data
+    - Participants should participate in decisionmaking
 
 ---
 
@@ -80,18 +88,34 @@ See <http://osf.io/9d5hr/>
 - Community of authorized individuals (researchers)
 - Individuals selected by data owner or repository
 
-## What have participants been told, approved?
+## What have participants been told, approved, understood?
 
-- What data collected, shared
+- What data collected, what will be shared
 - Who will have access
 - Where stored, how accessed
 - Purposes of use, types of questions
+
+## Are your data subject to statutory, regulatory, or contractual restrictions?
+
+- Students ([FERPA](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html))
+- Health ([HIPAA](https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html))
+- From Federal agencies ([Title 13](https://www.census.gov/history/www/reference/privacy_confidentiality/title_13_us_code.html), [Title 26](https://www.law.cornell.edu/uscode/text/26))
+- Proprietary data
+
+## [DataTags](https://datatags.org/) initiative
+
+- From [Dataverse](http://dataverse.org) @ Harvard
+- Checklist/workflow for 'tagging' data based on risk
+
+<div class="centered">
+<img src="img/datatags.jpg" height=300px/>
+</div>
 
 # Sharing de-identified data
 
 ## What is personally identifying information (PII)?
 
-- PII definitions vary by use case
+- [PII definitions](https://en.wikipedia.org/wiki/Personally_identifiable_information) vary by use case, context
 - Health Insurance Portability and Accountability Act (HIPAA) identifiers
 
 <div class="notes">
@@ -101,7 +125,7 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 ## HIPAA identifiers
 
 - Name
-- Address (all geographic subdivisions smaller than state, including street address, city county, and zip code)
+- Address (all geographic subdivisions smaller than state, including street address, city, county, and zip code)
 - All elements (except years) of dates related to an individual (including birthdate, admission date, discharge date, date of death, and exact age if over 89)
 
 ---
@@ -124,7 +148,7 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 ---
 
 - Finger or voice print
-- Photographic image - Photographic images are not limited to images of the face.
+- Photographic image - not limited to images of the face.
 - Any other characteristic that could uniquely identify the individual
 
 ## Examples of possibly sensitive data
@@ -183,19 +207,18 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 Name + DOB + ZIP uniquely identifies most Americans
 </div>
 
-<!-- --- -->
-
-<!-- <div class="centered"> -->
-<!-- <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1450006"> -->
-<!-- <img src="img/ohm-2009.jpg" height=550px> -->
-<!-- </a> -->
-<!-- </div> -->
-
 ## Ways to mitigate risk
 
 - Aggregate or censor sensitive variables
 - Aggregate or censor secondary identifying variables
+- Perturb or add noise to variables
+- Review data for disclosure risk
+
+---
+
 - Stepped or restricted access
+    - Data enclaves (e.g., Census data)
+    - Virtual data enclaves
 - See also de Wolf et al. ([2005](http://www.jstor.org/stable/3563537), [2006](https://www.ncbi.nlm.nih.gov/pubmed/16770883))
 
 ## Information to participants
@@ -203,6 +226,7 @@ Name + DOB + ZIP uniquely identifies most Americans
 - **Do**:
     - Describe how you will share data in as much detail as possible (autonomy)
     - Give motivation for recording of sensitive variables (beneficence)
+    - Consult data repository expertise (e.g., [ICPSR](https://www.icpsr.umich.edu/icpsrweb/), [Dataverse](http://dataverse.org), [Databrary](http://databrary.org))
     
 ---
 
@@ -215,6 +239,7 @@ Name + DOB + ZIP uniquely identifies most Americans
 - [ICPSR](https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/confidentiality/conf-language.html)
 - [Open Brain consent](https://open-brain-consent.readthedocs.io/en/latest/#)
 - [Draft language from Penn State IRB](https://osf.io/9d5hr/wiki/home/)
+- [Databrary sharing release template](https://www.databrary.org/access/policies/release-template.html)
 
 ## Case study: [OpenNeuro.org](http://openneuro.org)
 
@@ -316,6 +341,7 @@ Every researcher who wants access to Databrary must have formal written approval
 ## Lessons learned
 
 - Research consent ≠ permission to share
+    - Seek permission to share *after* data collection.
 - "Cloud" storage vs. institutionally housed
 - Comfort with data sharing varies among IRBs
 - Laws differ among countries
@@ -377,7 +403,7 @@ standard research groups
 
 # Recommendations
 
-## Best practices to adopt
+## Best practices
 
 - **Prepare for sharing**
     - Get IRB/ethics board approval 
@@ -397,7 +423,9 @@ standard research groups
 ---
 
 - **Share as openly as practicable**
-    - With approved, authorized data repositories
+    - With approved, authorized, [trusted](http://www.oclc.org/research/activities/trustedrep.html) data repositories
+- **Share as much individual-level, item-specific data as practicable**
+    - Finest grain data == highest value for reuse, new discovery
 
 ## Pitfalls to avoid
 
@@ -414,7 +442,7 @@ standard research groups
 - Sponsor requirements (or constraints) vs. open sharing
 - Do IRBs overstep regulatory boundaries when considering risks and benefits outside an approved study [(Burnam, 2014)](http://osc.centerforopenscience.org/2014/02/05/open-data-and-IRBs)?
 - Policies for restricting access but promoting openness
-- Who owns data
+- Who owns data?
 
 # Resources
 
