@@ -30,10 +30,12 @@ See <http://osf.io/9d5hr/>
 
 ## Acknowledgements
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=250px>
-<img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=250px>
-</br>
-<img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height-250px>
+
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/NSF_Logo.PNG" height=200px>
+<img src="https://science.nichd.nih.gov/confluence/download/attachments/34472103/NICHD-vertical-2-color.png?version=1&modificationDate=1477410070000&api=v2" height=200px>
+<img src="https://sloan.org/storage/app/media/Logos/Sloan-Logo-stacked-black-web.png" height-150px>
+</div>
 
 ## Vision
 
@@ -148,14 +150,15 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 ---
 
 - Finger or voice print
-- Photographic image - not limited to images of the face.
+- Photographic image - not limited to images of the face
 - Any other characteristic that could uniquely identify the individual
 
 ## Examples of possibly sensitive data
 
-- Health related information
+- Health-related information
     - Medical history
     - Medical risk factors including genetic data
+    - Self-reported vs. medical records
     
 ---
 
@@ -226,7 +229,7 @@ Name + DOB + ZIP uniquely identifies most Americans
 - **Do**:
     - Describe how you will share data in as much detail as possible (autonomy)
     - Give motivation for recording of sensitive variables (beneficence)
-    - Consult data repository expertise (e.g., [ICPSR](https://www.icpsr.umich.edu/icpsrweb/), [Dataverse](http://dataverse.org), [Databrary](http://databrary.org))
+    - Consult data repository experts (e.g., [ICPSR](https://www.icpsr.umich.edu/icpsrweb/), [Dataverse](http://dataverse.org), [Databrary](http://databrary.org))
     
 ---
 
@@ -277,7 +280,7 @@ Name + DOB + ZIP uniquely identifies most Americans
 ---
 
 - Researchers must obtain consent for secondary use of *identifiable* data **unless**
-    - identifiable information is essential to the research;
+    - identifiable information is essential to the research
     - use of identifiable information without consent is unlikely to adversely affect participants
     - researchers take appropriate measures to protect privacy of individuals and safeguard identifiable information
     
@@ -287,8 +290,6 @@ Name + DOB + ZIP uniquely identifies most Americans
     - researchers comply with any known preferences previously expressed by individuals about any use of their information
     - it is impossible or impracticable to seek consent
     - researchers have obtained any other necessary permission for secondary use of information for research purposes.
-
-<http://www.pre.ethics.gc.ca/eng/policy-politique/initiatives/tcps2-eptc2/chapter5-chapitre5/>
 
 ## Case studies in sharing identifiable data
 
@@ -423,7 +424,7 @@ standard research groups
 ---
 
 - **Share as openly as practicable**
-    - With approved, authorized, [trusted](http://www.oclc.org/research/activities/trustedrep.html) data repositories
+    - Consider approved, authorized, [trusted](http://www.oclc.org/research/activities/trustedrep.html) data repositories for sensitive data
 - **Share as much individual-level, item-specific data as practicable**
     - Finest grain data == highest value for reuse, new discovery
 
