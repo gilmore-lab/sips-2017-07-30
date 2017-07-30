@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <div class="centered">
 <img src="http://improvingpsych.org/img/logo.png" width=800px/>
 
-**2017-07-30 3:30-4:45 pm**
+**2017-07-30 3:30-4:15 pm**
 
 See <http://osf.io/9d5hr/>
 </div>
@@ -78,11 +78,11 @@ See <http://osf.io/9d5hr/>
 - What risks does data sharing pose?
 - How should data be protected?
 
-## Where will you share data?
+<!-- ## Where will you share data? -->
 
-- Researcher/lab/university server
-- Supplemental material linked to journal article
-- Data repository
+<!-- - Researcher/lab/university server -->
+<!-- - Supplemental material linked to journal article -->
+<!-- - Data repository -->
 
 ## Who will (& should) have access?
 
@@ -104,20 +104,12 @@ See <http://osf.io/9d5hr/>
 - From Federal agencies ([Title 13](https://www.census.gov/history/www/reference/privacy_confidentiality/title_13_us_code.html), [Title 26](https://www.law.cornell.edu/uscode/text/26))
 - Proprietary data
 
-## [DataTags](https://datatags.org/) initiative
-
-- From [Dataverse](http://dataverse.org) @ Harvard
-- Checklist/workflow for 'tagging' data based on risk
-
-<div class="centered">
-<img src="img/datatags.jpg" height=300px/>
-</div>
-
 # Sharing de-identified data
 
 ## What is personally identifying information (PII)?
 
 - [PII definitions](https://en.wikipedia.org/wiki/Personally_identifiable_information) vary by use case, context
+- Likelihood of identification depends on uniqueness in target and reference populations
 - Health Insurance Portability and Accountability Act (HIPAA) identifiers
 
 <div class="notes">
@@ -128,7 +120,7 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 
 - Name
 - Address (all geographic subdivisions smaller than state, including street address, city, county, and zip code)
-- All elements (except years) of dates related to an individual (including birthdate, admission date, discharge date, date of death, and exact age if over 89)
+- All elements (except years) of **dates** related to an individual (including birthdate, admission date, discharge date, date of death, and exact age if over 89)
 
 ---
 
@@ -145,7 +137,7 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 - Certificate or license number
 - Any vehicle or other device serial number
 - Web URL
-- Internet Protocol (IP) Address
+- **Internet Protocol (IP) Address**
 
 ---
 
@@ -153,13 +145,18 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 - Photographic image - not limited to images of the face
 - Any other characteristic that could uniquely identify the individual
 
+## Other potentially identifiable information
+
+- Structural MRI
+    - Emerging standard: deface
+- Genetic profiles
+
 ## Examples of possibly sensitive data
 
 - Health-related information
     - Medical history
     - Medical risk factors including genetic data
-    - Self-reported vs. medical records
-    
+
 ---
 
 - Information about other potentially stigmatizing characteristics (situation-dependent)
@@ -182,34 +179,6 @@ In the U.S., much behavioral research is funded by the NIH and has at least a no
 - Reidentification by targeted search (nemesis scenario)
 - Reidentification by mass matching (dystopian AI scenario)
 
-## How anonymous is 'anonymous' data?
-
----
-
-<div class="centered">
-<a href="http://dx.doi.org/10.1126/science.1256297">
-<img src="img/montjoye-etal-science.jpg" hwidth=800px>
-</a>
-</div>
-
----
-
-<div class="centered">
-<a href="http://dx.doi.org/10.1126/science.1229566">
-<img src="img/gymrek-etal-science.jpg" width=800px>
-</a>
-</div>
-    
----
-
-<div class="centered">
-<a href="https://dataprivacylab.org/projects/identifiability/paper1.pdf">
-<img src="img/sweeney-2000.jpg" width=800px>
-</a>
-
-Name + DOB + ZIP uniquely identifies most Americans
-</div>
-
 ## Ways to mitigate risk
 
 - Aggregate or censor sensitive variables
@@ -222,20 +191,7 @@ Name + DOB + ZIP uniquely identifies most Americans
 - Stepped or restricted access
     - Data enclaves (e.g., Census data)
     - Virtual data enclaves
-- See also de Wolf et al. ([2005](http://www.jstor.org/stable/3563537), [2006](https://www.ncbi.nlm.nih.gov/pubmed/16770883))
 
-## Information to participants
-
-- **Do**:
-    - Describe how you will share data in as much detail as possible (autonomy)
-    - Give motivation for recording of sensitive variables (beneficence)
-    - Consult data repository experts (e.g., [ICPSR](https://www.icpsr.umich.edu/icpsrweb/), [Dataverse](http://dataverse.org), [Databrary](http://databrary.org))
-    
----
-
-- **Avoid**:
-    - Making promises you cannot keep, e.g. *"no one except the researchers in the project will ever see the data"*
-    - Making unneccessary restrictions, e.g. *"your data will be stored for ten years then be destroyed"*
     
 ## Example language for consent forms
 
@@ -404,47 +360,100 @@ standard research groups
 
 # Recommendations
 
-## Best practices
+## **Prepare for sharing**
 
-- **Prepare for sharing**
-    - Get IRB/ethics board approval 
-    - Get participant approval (even if planning to anonymize)
+- Get IRB/ethics board approval 
+- Get participant approval (even if planning to anonymize)
+
+## **Alert participants**
+
+- **Where** data will be stored 
+    - e.g. in "cloud" servers (e.g., SurveyMonkey, Qualtrics, Databrary, OpenNeuro, OSF, etc.)
+    - Be explicit, but not specific
 
 ---
 
-- **Alert participants**
-    - **Where** data will be stored 
-        - e.g. in "cloud" servers (e.g., SurveyMonkey, Qualtrics, Databrary, OpenNeuro, OSF, etc.)
-        - Be explicit, but not specific
-    - **Who** will have access
-    - And for **how long**
-        - indefinitely
-        - stopping sharing possible, unsharing not-so
-    
+- **Who** will have access
+    - Public/anyone
+    - Researchers
+- And for **how long**
+    - indefinitely
+    - stopping sharing possible, unsharing not-so
+
 ---
 
-- **Share as openly as practicable**
-    - Consider approved, authorized, [trusted](http://www.oclc.org/research/activities/trustedrep.html) data repositories for sensitive data
-- **Share as much individual-level, item-specific data as practicable**
-    - Finest grain data == highest value for reuse, new discovery
+- **Why**:
+    - Give motivation for recording sensitive variables (beneficence)
 
-## Pitfalls to avoid
+- Consult data repository experts (e.g., [ICPSR](https://www.icpsr.umich.edu/icpsrweb/), [Dataverse](http://dataverse.org), [Databrary](http://databrary.org))
 
-- ~~Specific use cases for data~~
-    - *"Your data will be used to study the relationship between X and Y."*
-- ~~Data destruction clauses~~
+---
+
+- **Avoid** making promises you cannot keep: 
+      - *"no one except the researchers in the project will ever see the data"*
+- **Avoid** data destruction clauses:
     - *"Your data will be stored for X years then destroyed."*
     - **NOT REQUIRED by U.S. or Canadian law**
     
+---
+
+- Avoid describing overly specific use cases for data: 
+    - *"Your data will be used to study the relationship between X and Y."*
+
+## **Share as openly as practicable**
+
+- Consider approved, authorized, [trusted](http://www.oclc.org/research/activities/trustedrep.html) data repositories for sensitive data
+- **Share as much individual-level, item-specific data as practicable**
+    - Finest grain data == highest value for reuse, new discovery
+
 # Discussion
 
-## Issues
+## How anonymous is 'anonymous' data?
 
+- "Big Data’s End Run around Anonymity and Consent" [Barocas & Nissenbaum 2014](http://dx.doi.org/10.1017/CBO9781107590205.004)
+
+---
+
+<div class="centered">
+<a href="http://dx.doi.org/10.1126/science.1256297">
+<img src="img/montjoye-etal-science.jpg" hwidth=800px>
+</a>
+</div>
+
+---
+
+<div class="centered">
+<a href="http://dx.doi.org/10.1126/science.1229566">
+<img src="img/gymrek-etal-science.jpg" width=800px>
+</a>
+</div>
+    
+---
+
+<div class="centered">
+<a href="https://dataprivacylab.org/projects/identifiability/paper1.pdf">
+<img src="img/sweeney-2000.jpg" width=800px>
+</a>
+
+Name + DOB + ZIP uniquely identifies most Americans
+</div>
+
+## Other issues
+
+- Self-reported vs. medical records
 - Sponsor requirements (or constraints) vs. open sharing
 - Do IRBs overstep regulatory boundaries when considering risks and benefits outside an approved study [(Burnam, 2014)](http://osc.centerforopenscience.org/2014/02/05/open-data-and-IRBs)?
 - Policies for restricting access but promoting openness
-- "Big Data’s End Run around Anonymity and Consent" [Barocas & Nissenbaum 2014](http://dx.doi.org/10.1017/CBO9781107590205.004)
 - Who owns data?
+
+## [DataTags](https://datatags.org/) initiative
+
+- From [Dataverse](http://dataverse.org) @ Harvard
+- Checklist/workflow for 'tagging' data based on risk
+
+<div class="centered">
+<img src="img/datatags.jpg" height=300px/>
+</div>
 
 # Resources
 
